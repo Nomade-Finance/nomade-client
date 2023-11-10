@@ -1,0 +1,17 @@
+# https://www.robotstxt.org/robotstxt.html
+#            __
+#    _(\    |@@|
+#   (__/\__ \--/ __
+#      \___|----|  |   __
+#          \ }{ /\ )_ / _\
+#          /\__/\ \__O (__
+#         (--/\--)    \__/
+#         _)(  )(_
+#        `---''---`
+#
+#   Bonjour bot, ou nomade perdue !
+#   Bienvenue sur le site Nomade Finance,
+#   nous sommes heureux de vous avoir comme client.
+
+User-agent: * 
+Disallow:
