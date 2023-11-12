@@ -1,0 +1,144 @@
+nav {
+  padding: 0.7em;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  height: 75px;
+  display: flex;
+  font-size: 1rem;
+  position: sticky;
+  width: 100vw;
+  font-weight: 500;
+  align-items: center;
+  justify-content: center;
+  background-color: $bleu-nomade;
+  text-transform: uppercase;
+  border-bottom: solid 0.5px $blanc-nomade;
+
+  .navbar-logo {
+    width: 140px;
+    height: 40px;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: row;
+    grid-gap: 2em;
+    list-style-type: none;
+    text-align: center;
+    width: 70vw;
+    justify-content: end;
+    margin-right: 2rem;
+  }
+
+  .nav-links {
+    color: $blanc-nomade;
+    text-decoration: none;
+    padding: 1.3rem 1rem;
+    transition: opacity 0.2s ease-out;
+  }
+
+  .nav-links:hover {
+    background-color: #fffcf70d;
+    border-radius: 5px;
+
+  }
+  .nav-links-mobile {
+    display: none;
+  }
+  .menu-icon {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .navbar-button {
+    display: none;
+  }
+
+  nav {
+    .nav-menu {
+      left: 0;
+      opacity: 0;
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      position: absolute;
+      flex-direction: column;
+      transform: translateY(-100%);
+      transition: all ease-out, opacity  ease-out;
+      justify-content: center;
+      align-items: center;
+      z-index: 1; // Add this line
+
+
+      .nav-links {
+        display: grid;
+        text-align: center;
+        place-self: center;
+        padding: 1em;
+        width: 90vw;
+        color: $blanc-nomade !important;
+        border-radius: 5px;
+      }
+
+      .nav-links:hover {
+        scale: 1.05;
+      }
+
+      .nav-links-mobile {
+        display: block;
+        text-align: center;
+        padding: 1em;
+        margin: 0 1em;
+        border-radius: 5px;
+        color: $bleu-nomade;
+        background: $blanc-nomade;
+        text-decoration: none;
+        font-size: 1em;
+        width: 90vw;
+      }
+
+      .nav-links-mobile:hover {
+        color: $blanc-nomade;
+        background-color: $orange-nomade;
+        transition: 5ms;
+      }
+    }
+
+    .nav-menu.active {
+      backdrop-filter: blur(5em);
+      -webkit-backdrop-filter: blur(5em);
+      -moz-backdrop-filter: blur(5em);
+      -ms-backdrop-filter: blur(5em);
+      -o-backdrop-filter:blur(5em);
+      background-color: rgba(18, 52, 99, 0.7);
+      top: 0px;
+      z-index: -1;
+      transform: translateY(0vw);
+      opacity: 1;
+      transition: all ease-in, opacity ease-in;
+    }
+
+    .menu-icon {
+      display: flex;
+      position: absolute;
+      top: center;
+      left: 1rem;
+      transform: translate(-100, 60%);
+      cursor: pointer;
+      z-index: 3;
+
+      .menu {
+        color: $blanc-nomade;
+        font-size: 2rem;
+
+      }
+
+      .close {
+        color: $blanc-nomade;
+        font-size: 2rem;
+      }
+    }
+  }
+}

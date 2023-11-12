@@ -41,10 +41,11 @@
       display: flex;
       flex-direction: column;
       place-items: center;
+      justify-content: space-between;
       padding: 3em;
+      gap: 3em;
       color: $blanc-nomade;
       transition: all ease-in-out;
-      transition: opacity 3ms;
       margin-left: auto;
       margin-right: auto;
 

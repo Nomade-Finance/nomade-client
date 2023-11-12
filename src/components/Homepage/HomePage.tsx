@@ -1,6 +1,5 @@
 import Button from '@components/Button/Button'
 import { Link } from 'react-router-dom'
-
 export default function HomePage () {
   return (
     <section id="home-body">
@@ -13,7 +12,7 @@ export default function HomePage () {
               <b className="cryptomonnaie">crypto-actifs</b>
             </h1>
             <Link to="/echanges">
-              <Button label="Echanges" outline/>
+              <Button label="Lancer L'app" outline/>
             </Link>
           </section>
 

@@ -3,10 +3,28 @@
   border: none;
   border-radius: 5px;
   text-transform: uppercase;
+  display: flex;
+  place-items: center;
   font-size: 1em;
   cursor: pointer;
   background-color: $blanc-nomade;
   color: $bleu-nomade;
+  &:hover {
+    background-color: $orange-nomade;
+    color: $blanc-nomade;
+    transition: all 0.1s ease-out;
+  }
+  
+  .button-icon {
+    // ajoute de l'espace à droite lorsque l'icône est à gauche
+    &:not(.right) {
+      margin-right: 0.3rem;
+    }
+    // ajoute de l'espace à gauche lorsque l'icône est à droite
+    &.right {
+      margin-left: 0.3rem;
+    }
+  }
 
   &--outline {
     background-color: transparent;
@@ -15,6 +33,7 @@
     &:hover {
       background-color: $blanc-nomade;
       color: $bleu-nomade;
+      transition: all 0.1s ease-out;
     }
   }
 }
