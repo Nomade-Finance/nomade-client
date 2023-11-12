@@ -1,7 +1,7 @@
 <div align="center">
-  <img src="./src/assets/nomade-badge.svg" width="125" height="125" alt="badge-nomade">
+  <img src="./src/assets/nomade-badge.svg" width="125" height="125" alt="badge-nomade"/>
+  <legend align="center">&copy; Nomade Client</legend>
 </div>
-<legend align="center">&copy; Nomade Client</legend>
 
 ## Technologies
 

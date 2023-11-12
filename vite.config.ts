@@ -11,7 +11,7 @@ export default defineConfig({
     eslintPlugin()
   ],
 
-  base: './',
+  base: '/',
   resolve: {
     alias: {
       '@pages': path.resolve(__dirname, 'src/pages'),
