@@ -10,16 +10,20 @@ export default defineConfig({
     react(),
     eslintPlugin()
   ],
-  build: {
-    manifest: true
-  },
-  base: './',
+
+  base: '/',
   resolve: {
     alias: {
       '@pages': path.resolve(__dirname, 'src/pages'),
+      '@layouts': path.resolve(__dirname, 'src/layouts'),
+      '@hooks': path.resolve(__dirname, 'src/hooks'),
       '@assets': path.resolve(__dirname, 'src/assets'),
       '@components': path.resolve(__dirname, 'src/components'),
       '@styles': path.resolve(__dirname, 'src/styles')
     }
+  },
+
+  build: {
+    manifest: true
   }
 })

@@ -1,7 +1,6 @@
-<h1 align="center">&copy; Nomade Client</h1>
-
 <div align="center">
-  <img src="./src/assets/nomade-badge.svg" width="125" height="125" alt="badge-nomade">
+  <img src="./src/assets/nomade-badge.svg" width="125" height="125" alt="badge-nomade"/>
+  <legend align="center">&copy; Nomade Client</legend>
 </div>
 
 ## Technologies
@@ -22,7 +21,8 @@ Nous encourageons vivement les contributions de la communauté. Si vous repérez
 
 1. `Fork` ce référentiel.
 2. Clonez votre fork sur votre machine.
-3. Créez un pull request pour proposer vos modifications.
+3. Créez une Branche.
+4. Créez un pull request pour proposer vos modifications.
 
 ### Installation
 

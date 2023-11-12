@@ -1,8 +1,19 @@
 @import "./scss/base/base";
 
 /////////COMPONENTS/////////
-/// 1. Background
+/// Homepage
 @import "./scss/components/homepage";
-/// 2. Button
+/// Button
 @import "./scss/components/button";
+/// Header
+@import "./scss/components/header";
+/// Navbar
+@import "./scss/components/navbar";
+/// Footer
+@import "./scss/components/footer";
+//============================
+
+/////////LAYOUTS/////////
+/// Pre
+@import "./scss/layouts/pre"    
 //============================
