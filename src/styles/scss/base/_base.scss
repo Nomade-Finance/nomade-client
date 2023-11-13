@@ -1,17 +1,7 @@
-$background: #fffcf7;
-$vert-nomade: #099a4d;
-$bleu-nomade: #123463;
-$blanc-nomade: #fffcf7;
-$noir-nomade: #1c2826;
-$orange-nomade: #e49435;
-$hover-nomade: #fffcf70d;
-$orange-30-nomade: rgba(228, 148, 53, 0.3);
-$bleu-30-nomade: rgba(18, 52, 99, 0.3);
-$blanc-30-nomade: rgba(255, 255, 255, 0.3);
+@import '../variables/colors';
 
 :root {
   overflow-x: hidden;
-  transition: 100ms ease-in-out;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   font-family: "Montserrat", system-ui, Helvetica, Arial, sans-serif;
@@ -47,6 +37,7 @@ html {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
+
 
 @media (prefers-color-scheme: dark) {
   :root {

@@ -1,0 +1,15 @@
+@import '../../styles/scss/variables/colors';
+
+.loading {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    color: $blanc-nomade;
+    background: transparent;
+    transition: all 1000ms ease-in-out;
+    img{
+        width: 100px;
+    }
+}

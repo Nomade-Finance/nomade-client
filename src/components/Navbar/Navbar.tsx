@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom'
 import MenuIcon from '@mui/icons-material/Menu'
 import { MenuItems } from './MenuItems'
 import logo from '@assets/logos/nomade-finance-logo-blanc-bleu.svg'
+import { motion } from 'framer-motion'
 
 class Navbar extends Component {
   state = { clicked: false }
@@ -21,7 +22,6 @@ class Navbar extends Component {
             className="navbar-logo"
             src={logo}
             alt="logo nomade finance"
-            loading="lazy"
           />
         </Link>
         <div className="menu-icon" onClick={this.handleClick}>
@@ -33,14 +33,17 @@ class Navbar extends Component {
             <MenuIcon className="menu" />
               )}
         </div>
-        <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
+        <ul
+        className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
           {MenuItems.map((item, index) => {
             return (
-              <li key={index}>
+              <motion.li
+              whileTap={{ scale: 0.97 }}
+              key={index}>
                 <Link className={item.cName} to={item.url}>
                   {item.title}
                 </Link>
-              </li>
+              </motion.li>
             )
           })}
         </ul>

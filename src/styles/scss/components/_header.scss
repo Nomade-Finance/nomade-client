@@ -1,9 +1,11 @@
+@import "../variables/colors";
 #main-header {
   display: flex;
   flex-direction: row;
   overflow: hidden;
   height: 25px;
   color: $blanc-nomade;
+  background-color: $noir-nomade;
   font-weight: 100;
   font-size: small;
   position: sticky;
@@ -38,14 +40,12 @@
       padding-left: 0.5em;
       padding-top: 0.4em;
       padding-bottom: 0.4em;
-
     }
     p{
       border-right: solid 0.5px $blanc-nomade ;
       padding-right: 0.5em;
       padding-top: 0.4em;
       padding-bottom: 0.4em;
-
       font-weight: 500;
     }
     span{

@@ -3,19 +3,24 @@ import { FaDiscord, FaGithub, FaLinkedin } from 'react-icons/fa'
 import { Component } from 'react'
 import { FooterMenuItems } from './FooterMenuItems'
 import { Link } from 'react-router-dom'
+import { m } from 'framer-motion'
 
 class Footer extends Component {
   render () {
     return (
       <section id='main-footer'>
-        <ul className="footer-menu">
+        <ul
+        className="footer-menu">
           {FooterMenuItems.map((item, index) => {
             return (
-              <li key={index}>
+              <m.li
+              whileDrag={{ opacity: 0.7 }}
+
+              key={index}>
                 <Link className={item.cName} to={item.url}>
                   {item.title}
                 </Link>
-              </li>
+              </m.li>
             )
           })}
         </ul>
