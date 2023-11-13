@@ -5,6 +5,7 @@ import usePreLayout from '@hooks/usePreLayout'
 export default function Accueil () {
   const layout = usePreLayout()
   const header = useHeader()
+
   return (
     <section>
       {header.header}
