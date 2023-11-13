@@ -1,6 +1,6 @@
 import { ReactNode } from 'react'
+import { m } from 'framer-motion'
 import useLayoutAvant from '@hooks/usePreLayout'
-
 interface LayoutAvantProps {
   children: ReactNode;
 }
@@ -11,7 +11,11 @@ const LayoutAvant = ({ children }: LayoutAvantProps) => {
   return (
     <section>
       {navbar}
-      <main className="pre-child">{children}</main>
+      <m.main
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
+      className="pre-child">{children}</m.main>
       {footer}
     </section>
   )
