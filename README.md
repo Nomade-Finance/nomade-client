@@ -5,6 +5,8 @@
 
 ## Technologies
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/277495f5f37942b3a4807099bcdfa810)](https://app.codacy.com/gh/Nomade-Finance/nomade-client?utm_source=github.com&utm_medium=referral&utm_content=Nomade-Finance/nomade-client&utm_campaign=Badge_Grade)
+
 Notre projet utilise les technologies de pointe suivantes:
 
 - **React** : La bibliothèque JavaScript essentielle pour créer des interfaces utilisateur interactives.
