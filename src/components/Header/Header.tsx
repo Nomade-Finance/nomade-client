@@ -77,9 +77,10 @@ const Header = () => {
 
   return (
     <header id="main-header">
-      <Marquee className='marquee' autoFill pauseOnHover loop={0} >
+      <Marquee className='marquee' autoFill pauseOnHover loop={0}
+      >
       {cryptoData.map((crypto) => (
-        <div key={crypto.id} style={{ marginRight: '2rem' }}>
+        <div key={crypto.id} style={{ marginRight: '0.5rem' }}>
           <h2>{crypto.name} {'-'}</h2>
           <p>
             <span>{'-'} Prix Actuel: </span>

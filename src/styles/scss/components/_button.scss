@@ -7,11 +7,11 @@
   place-items: center;
   font-size: 1em;
   cursor: pointer;
-  background-color: $blanc-nomade;
-  color: $bleu-nomade;
+  background-color: var(--nomade-primary);
+  color: var(--nomade-background);
   &:hover {
-    background-color: $orange-nomade;
-    color: $blanc-nomade;
+    background-color: var(--nomade-accent);
+    color: var(--nomade-colorc);
     transition: all 0.1s ease-out;
   }
   
@@ -28,12 +28,23 @@
 
   &--outline {
     background-color: transparent;
-    border: 1px solid $blanc-nomade;
-    color: $blanc-nomade;
+    border: 1px solid var(--nomade-text);
+    color: var(--nomade-text);
     &:hover {
-      background-color: $blanc-nomade;
-      color: $bleu-nomade;
+      background-color: var(--nomade-text);
+      color: var(--nomade-background);
       transition: all 0.1s ease-out;
     }
   }
+}
+
+.theme-switcher{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1rem;
+  cursor: pointer;
+  color: var(--nomade-primary);
+  border: solid 1px var(--nomade-border);
+  border-radius: 5px;
 }

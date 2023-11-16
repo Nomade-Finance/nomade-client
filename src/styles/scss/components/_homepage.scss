@@ -10,7 +10,7 @@
     flex-direction: column;
     place-items: center;
     justify-content: center;
-    background: linear-gradient(90deg, $orange-nomade, $bleu-nomade);
+    background: linear-gradient(90deg, var(--nomade-accent), var(--nomade-background));
     background-size: 300% 300%;
     animation: gradient 15s alternate infinite;
     position: relative;
@@ -44,11 +44,10 @@
       justify-content: space-between;
       padding: 3em;
       gap: 3em;
-      color: $blanc-nomade;
-      transition: all ease-in-out;
+      color: var(--nomade-text) ;
       margin-left: auto;
       margin-right: auto;
-
+      
       .logoText {
         max-width: 35em;
         min-width: 5em;
@@ -65,8 +64,8 @@
       .cryptomonnaie {
         background: linear-gradient(
           -45deg,
-          $orange-nomade 0%,
-          $blanc-nomade 100%
+          var(--nomade-accent) 0%,
+          var(--nomade-text) 100%
         );
         background-clip: text;
         -webkit-background-clip: text; /* Safari */
@@ -77,6 +76,7 @@
 }
 
 .title {
+  transition: all 1000ms ease-in-out;
   font-size: 4rem;
   line-height: 1.2;
   font-weight: 500;

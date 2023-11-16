@@ -1,6 +1,6 @@
 <div align="center">
   <img src="./src/assets/nomade-badge.svg" width="125" height="125" alt="badge-nomade"/>
-  <legend align="center">&copy; Nomade Client</legend>
+  <p align="center">&copy; Nomade Client</p>
 </div>
 
 ## Technologies
@@ -53,3 +53,5 @@ Ceci renverra la page d'accueil de Nomade Finance.
 ---
 
 Nous espérons que ce guide vous a été instructif. N'hésitez pas à poser des questions au besoin.
+
+![Vercel](https://vercelbadge.vercel.app/api/Nomade-Finance/nomade-client)
