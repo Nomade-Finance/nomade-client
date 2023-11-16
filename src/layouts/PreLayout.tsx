@@ -1,12 +1,12 @@
 import { ReactNode } from 'react'
 import { m } from 'framer-motion'
-import useLayoutAvant from '@hooks/usePreLayout'
-interface LayoutAvantProps {
+import usePreLayout from '@hooks/usePreLayout'
+interface PreLayoutProps {
   children: ReactNode;
 }
 
-const LayoutAvant = ({ children }: LayoutAvantProps) => {
-  const { navbar, footer } = useLayoutAvant()
+const PreLayout = ({ children }: PreLayoutProps) => {
+  const { navbar, footer } = usePreLayout()
 
   return (
     <section>
@@ -20,5 +20,4 @@ const LayoutAvant = ({ children }: LayoutAvantProps) => {
     </section>
   )
 }
-
-export default LayoutAvant
+export default PreLayout

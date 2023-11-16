@@ -1,9 +1,11 @@
 import PostLayout from '@layouts/PostLayout'
 
-export default function Echanges () {
+function Support () {
   return (
     <PostLayout>
-      <h1>Bienvenue à l&rsquo;oasis</h1>
+      <h1>Support</h1>
     </PostLayout>
   )
 }
+
+export default Support

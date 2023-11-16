@@ -1,0 +1,46 @@
+$colors-light: (
+  primary: #123463,
+  secondary: #099a4d,
+  background: #fffcf7,
+  hbackground: #e49435,
+  text: #123463,
+  colorc: #fffcf7,
+  accent: #e49435,
+  hover: #1234630d,
+  accent-light: rgba(228, 148, 53, 0.3),
+  primary-light:rgba(255, 252, 247, 0.3),
+  secondary-light: rgba(18, 52, 99, 0.4),
+  border: #12346325,
+  blck: #1c2826,
+  home-text: #fffcf7,
+
+);
+
+$colors-dark: (
+  primary: #fffcf7,
+  secondary: #099a4d,
+  background: #123463,
+  home-background: #123463,
+  text: #fffcf7,
+  colorc: #fffcf7,
+  accent: #e49435,
+  hover: #fffcf70d,
+  accent-light: rgba(228, 148, 53, 0.3),
+  primary-light: rgba(28, 40, 38, 0.3),
+  secondary-light: rgba(255, 255, 255, 0.3),
+  border: #fffcf725,
+  blck: #1c2826,
+  home-text: #e49435,
+);
+
+:root {
+  @each $name, $color in $colors-light {
+    --nomade-#{$name}: #{$color};
+  }
+}
+
+body.dark {
+  @each $name, $color in $colors-dark {
+    --nomade-#{$name}: #{$color};
+  }
+}

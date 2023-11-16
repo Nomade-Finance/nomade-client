@@ -1,9 +1,10 @@
 import PostLayout from '@layouts/PostLayout'
 
-export default function Echanges () {
+const Dashboard = () => {
   return (
     <PostLayout>
-      <h1>Bienvenue à l&rsquo;oasis</h1>
+        <h3>Dashboard<p>Bienvenue:</p></h3>
     </PostLayout>
   )
 }
+export default Dashboard

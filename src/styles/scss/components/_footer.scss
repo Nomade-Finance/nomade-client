@@ -1,5 +1,3 @@
-@import '../variables/colors';
-
 #main-footer {
   bottom: 0;
   z-index: 1;
@@ -9,8 +7,10 @@
   font-size: 1rem;
   position: sticky;
   align-items: center;
-  background-color: $bleu-nomade;
+  border-top: solid 1px var(--nomade-border);
+  background-color: var(--nomade-background);
   justify-content: space-between;
+  transition: all 0.3s ease-in;
   
   .footer-menu {
     display: grid;
@@ -29,7 +29,7 @@
     padding: 0.5em;
     white-space: nowrap;
     a{
-      color: $blanc-nomade;
+      color: var(--nomade-primary);
       &:hover {
         scale: 1.2;
         transition: all 0.2s ease-out;
@@ -38,7 +38,7 @@
   }
 
   .footer-links {
-    color: $blanc-nomade;
+    color: var(--nomade-primary);
     text-decoration: none;
     padding: 0.5em;
     font-size: 1rem;

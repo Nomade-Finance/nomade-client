@@ -53,3 +53,5 @@ Ceci renverra la page d'accueil de Nomade Finance.
 ---
 
 Nous espérons que ce guide vous a été instructif. N'hésitez pas à poser des questions au besoin.
+
+![Vercel](https://vercelbadge.vercel.app/api/Nomade-Finance/nomade-client)

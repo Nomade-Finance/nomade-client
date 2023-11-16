@@ -1,4 +1,5 @@
 import '@styles/index.scss'
+import 'vite/modulepreload-polyfill'
 
 import { BrowserRouter } from 'react-router-dom'
 import ReactDOM from 'react-dom/client'
