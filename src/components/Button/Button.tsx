@@ -1,16 +1,21 @@
+import './_button.scss'
+
 import React from 'react'
+
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   label?: string;
-  onClick?: () => void;
+  onClick?: (event: React.MouseEvent) => void;
   isLoading?: boolean;
   color?: string;
   outline?: boolean;
   icon?: React.ReactNode;
+  type: 'button' | 'submit' | 'reset';
   iconPosition?: 'left' | 'right';
 }
 
 const Button: React.FC<ButtonProps> = ({
   label = 'Submit',
+  type,
   onClick = () => {},
   isLoading = false,
   outline = false,
@@ -26,6 +31,7 @@ const Button: React.FC<ButtonProps> = ({
       onClick={onClick}
       {...props}
       disabled={isLoading}
+      type={type}
     >
       {icon && iconPosition === 'left' && (
         <span className="button-icon">{icon}</span>

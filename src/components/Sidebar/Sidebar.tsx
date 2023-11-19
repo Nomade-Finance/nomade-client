@@ -1,10 +1,12 @@
+import './_sidebar.scss'
+
 import { easeInOut, m } from 'framer-motion'
 
 import CloseIcon from '@mui/icons-material/Close'
-import IconDark from '@assets/logos/sidebar-closed-icon-4dark.svg'
-import IconLight from '@assets/logos/sidebar-closed-icon-4light.svg'
-import IconTextDark from '@assets/logos/sidebar-nomade-finance-icon-text-4Dark.svg'
-import IconTextLight from '@assets/logos/sidebar-nomade-finance-icon-text-4Light.svg'
+import IconDark from '@assets/nomade-logos/sidebar-closed-icon-4dark.svg'
+import IconLight from '@assets/nomade-logos/sidebar-closed-icon-4light.svg'
+import IconTextDark from '@assets/nomade-logos/sidebar-nomade-finance-icon-text-4Dark.svg'
+import IconTextLight from '@assets/nomade-logos/sidebar-nomade-finance-icon-text-4Light.svg'
 import { Link } from 'react-router-dom'
 import MenuIcon from '@mui/icons-material/Menu'
 import { SidebarData } from './SidebarData'

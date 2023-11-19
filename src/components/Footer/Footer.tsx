@@ -1,3 +1,5 @@
+import './_footer.scss'
+
 import { FaDiscord, FaGithub, FaLinkedin } from 'react-icons/fa'
 
 import { Component } from 'react'

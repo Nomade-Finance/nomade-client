@@ -1,9 +1,11 @@
+import './_navbar.scss'
+
 import Button from '@components/Button/Button'
 import CloseIcon from '@mui/icons-material/Close'
 import CurrencyBitcoinRoundedIcon from '@mui/icons-material/CurrencyBitcoinRounded'
 import { Link } from 'react-router-dom'
-import Logo4Dark from '@assets/logos/nomade-finance-logo-blanc-bleu-4Dark.svg'
-import Logo4Light from '@assets/logos/nomade-finance-logo-blanc-bleu-4Light.svg'
+import Logo4Dark from '@assets/nomade-logos/nomade-finance-logo-blanc-bleu-4Dark.svg'
+import Logo4Light from '@assets/nomade-logos/nomade-finance-logo-blanc-bleu-4Light.svg'
 import MenuIcon from '@mui/icons-material/Menu'
 import { MenuItems } from './MenuItems'
 import ThemeSwitcher from '@components/Button/ThemeSwitch'
@@ -52,7 +54,7 @@ const Navbar = () => {
         <ThemeSwitcher onClick={switchTheme}/>
       </m.ul>
       <Link to="/echanges">
-        <Button className="navbar-button" label="Échanges" icon={<CurrencyBitcoinRoundedIcon />} iconPosition="right" />
+        <Button type='button' className="navbar-button" label="Échanges" icon={<CurrencyBitcoinRoundedIcon />} iconPosition="right" />
       </Link>
     </nav>
   )

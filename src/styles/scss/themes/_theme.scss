@@ -13,6 +13,15 @@ $colors-light: (
   border: #12346325,
   blck: #1c2826,
   home-text: #fffcf7,
+//Conversion  
+conversion-hover: #123463,
+conversion-secondary: #123463,
+conversion-error: #fffcf7,
+conversion-hover-text: #fffcf7,
+conversion-text: #fffcf7,
+isSelected: #e49435,
+summary:rgba(18, 52, 99, 0.5),
+//-----------------------------
 
 );
 
@@ -31,6 +40,17 @@ $colors-dark: (
   border: #fffcf725,
   blck: #1c2826,
   home-text: #e49435,
+//Conversion  
+  conversion-hover: #fffcf7,
+  conversion-secondary: #099a4d,
+  conversion-error: #e49435,
+  conversion-hover-text: #123463,
+  conversion-text: #fffcf7,
+  isSelected: #e49435,
+  summary:rgba(28, 40, 38, 0.5),
+//-----------------------------
+
+
 );
 
 :root {

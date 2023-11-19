@@ -1,7 +1,8 @@
+import './_homepage.scss'
+
 import Button from '@components/Button/Button'
 import { Link } from 'react-router-dom'
 import { m } from 'framer-motion'
-
 export default function HomePage () {
   return (
     <section id="home-body">
