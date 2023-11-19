@@ -1,3 +1,5 @@
+import './_theme-swither.scss'
+
 import { FaMoon, FaSun } from 'react-icons/fa'
 import React, { useEffect, useState } from 'react'
 
@@ -38,7 +40,6 @@ const ThemeSwitcher: React.FC<ThemeSwitcherProps> = ({
       className="theme-switcher"
       whileHover={{ cursor: 'pointer', background: 'var(--nomade-hover)' }}
       whileTap={{ scale: 0.97 }}
-      style={{ height: '30px', width: '30px', background: 'none' }}
       onClick={switchTheme}
     >
       {isDarkMode ? <FaSun /> : <FaMoon />}

@@ -14,8 +14,6 @@ nav {
   background-color: var(--nomade-background);
   text-transform: uppercase;
   border-bottom: solid 0.5px var(--nomade-border);
-  transition: all 0.3s ease-in;
-
   .navbar-logo {
     width: 140px;
     height: 40px;
@@ -103,7 +101,7 @@ nav {
       }
 
       .nav-links-mobile:hover {
-        color: var(--nomade-background);
+        color: var(--nomade-colorc);
         background-color: var(--nomade-accent);
         transition: 5ms;
       }

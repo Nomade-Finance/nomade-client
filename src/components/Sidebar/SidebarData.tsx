@@ -1,8 +1,8 @@
+// import AccountBalanceWalletRoundedIcon from '@mui/icons-material/AccountBalanceWalletRounded'
 import HomeRoundedIcon from '@mui/icons-material/HomeRounded'
 import PersonRoundedIcon from '@mui/icons-material/PersonRounded'
 import SupportAgentRoundedIcon from '@mui/icons-material/SupportAgentRounded'
 import SwapHorizRoundedIcon from '@mui/icons-material/SwapHorizRounded'
-
 export const SidebarData = [
   {
     title: 'Accueil',
@@ -22,6 +22,13 @@ export const SidebarData = [
     icon: <PersonRoundedIcon/>,
     cName: 'side-link'
   },
+
+  // {
+  //   title: 'Liquidité (soon)',
+  //   path: '#',
+  //   icon: <AccountBalanceWalletRoundedIcon/>,
+  //   cName: 'side-link'
+  // },
 
   {
     title: 'Support',
