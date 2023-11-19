@@ -5,6 +5,7 @@
   text-transform: uppercase;
   display: flex;
   place-items: center;
+justify-content: center;
   font-size: 1em;
   cursor: pointer;
   background-color: var(--nomade-primary);
@@ -16,6 +17,8 @@
   }
   
   .button-icon {
+    display: flex;
+    align-items: center;
     // ajoute de l'espace à droite lorsque l'icône est à gauche
     &:not(.right) {
       margin-right: 0.3rem;
@@ -36,15 +39,4 @@
       transition: all 0.1s ease-out;
     }
   }
-}
-
-.theme-switcher{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 1rem;
-  cursor: pointer;
-  color: var(--nomade-primary);
-  border: solid 1px var(--nomade-border);
-  border-radius: 5px;
 }

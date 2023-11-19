@@ -23,10 +23,14 @@
     "baseUrl": ".",
     "paths": {
       "@assets/*": ["src/assets/*"],
+      "@api/*": ["src/api/*"],
+      "@utils/*": ["src/utils/*"],
+      "@data/*": ["src/data/*"],
       "@router/*": ["src/router/*"],
       "@components/*": ["src/components/*"],
       "@pages/*": ["src/pages/*"],
       "@layouts/*": ["src/layouts/*"],
+      "@types-nomade/*": ["src/types/*"],
       "@hooks/*": ["src/hooks/*"],
       "@styles/*": ["src/styles/*"]
     }

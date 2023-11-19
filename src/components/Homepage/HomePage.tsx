@@ -1,3 +1,5 @@
+import './_homepage.scss'
+
 import Button from '@components/Button/Button'
 import { Link } from 'react-router-dom'
 import { m } from 'framer-motion'
@@ -30,7 +32,7 @@ export default function HomePage () {
               className="cryptomonnaie"> crypto-actifs</m.b>
             </h1>
             <Link to="/echanges">
-                <Button label="Lancer L'app" outline />
+                <Button type='button' label="Lancer L'app" outline />
             </Link>
           </m.section>
         </m.div>
