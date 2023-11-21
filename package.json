@@ -17,6 +17,8 @@
     "@mui/icons-material": "^5.14.16",
     "@vercel/analytics": "^1.1.1",
     "axios": "^1.6.1",
+    "dotenv": "^16.3.1",
+    "firebase": "^10.6.0",
     "framer-motion": "^10.16.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -28,6 +30,7 @@
   "devDependencies": {
     "@nabla/vite-plugin-eslint": "^1.5.0",
     "@types/axios": "^0.14.0",
+    "@types/node": "^20.9.2",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
     "@types/react-router-dom": "^5.3.3",

@@ -29,5 +29,19 @@ export default defineConfig({
 
   build: {
     manifest: true
+  },
+  server: {
+    proxy: {
+      '/api': {
+        target: 'https://api.binance.com/api/v3',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, '')
+      },
+      '/rates': {
+        target: 'https://api.exchangerate-api.com/v4',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/rates/, '')
+      }
+    }
   }
 })

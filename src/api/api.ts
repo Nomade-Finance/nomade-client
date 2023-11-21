@@ -1,32 +1,33 @@
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import { CryptoData, ExchangeRateData } from '../interfaces/interfaces'
 
-import axios from 'axios'
+const API_KEY = import.meta.env.VITE_APP_BINANCE_API_KEY
 
-export const fetchCryptoData = async (): Promise<CryptoData[]> => {
-  const result = await axios.get<CryptoData[]>(
-    'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=bitcoin,ethereum,solana,tether'
-  )
-  return result.data
+if (!API_KEY) {
+  throw new Error('VITE_APP_BINANCE_API_KEY is not set in .env')
+}
+
+export const fetchCryptoData = async (symbol: string): Promise<CryptoData> => {
+  const response = await fetch(`/api/ticker/price?symbol=${symbol.toUpperCase()}USDT`, {
+    headers: {
+      'X-MBX-APIKEY': API_KEY
+    }
+  })
+  const data = await response.json() as CryptoData
+  return data
+}
+
+export const fetchCryptoRate = async (symbol: string): Promise<number> => {
+  const data = await fetchCryptoData(symbol)
+  return (data.price)
 }
 
 export const fetchExchangeRate = async (): Promise<number> => {
-  const result = await axios.get<ExchangeRateData>(
-    'https://api.exchangerate-api.com/v4/latest/USD'
-  )
-  return result.data.rates.XOF
+  const response = await fetch('/rates/latest/USD')
+  const data = await response.json() as ExchangeRateData
+  if (!data.rates) {
+    throw new Error('Les données des taux ne sont pas disponibles')
+  }
+  const rate = Math.round(data.rates.XOF)
+  return rate
 }
-// --------/ Conversion / -------------//
-export const fetchBitcoinRate = async (): Promise<number> => {
-  const result = await axios.get<CryptoData[]>(
-    'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=bitcoin'
-  )
-  return result.data[0].current_price
-}
-
-export const fetchUSDCRate = async (): Promise<number> => {
-  const result = await axios.get<CryptoData[]>(
-    'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=usd-coin'
-  )
-  return result.data[0].current_price
-}
-// ------------------------------------

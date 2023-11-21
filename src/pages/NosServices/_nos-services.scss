@@ -1,0 +1,45 @@
+#main-services {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1em;
+  height: 100%;
+  padding: 1em;
+  border-radius: 5px;
+  border: solid 1px var(--nomade-border);
+
+  .sevices-title {
+    font-size: 3em;
+  }
+
+  .subtitle {
+    font-size: 1.5em;
+    // color: #666;
+  }
+
+  .description {
+    font-size: 1em;
+    // color: #999;
+  }
+
+  .crypto-card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+
+    @media (max-width: 1024px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}

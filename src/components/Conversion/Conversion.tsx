@@ -2,7 +2,7 @@ import './_conversion.scss'
 
 import { ApiData, FormData } from '@types-nomade/types'
 import React, { useCallback, useEffect, useState } from 'react'
-import { fetchBitcoinRate, fetchExchangeRate, fetchUSDCRate } from '@api/api'
+import { fetchCryptoRate, fetchExchangeRate } from '@api/api'
 
 import AutorenewIcon from '@mui/icons-material/Autorenew'
 import Button from '@components/Button/Button'
@@ -53,11 +53,12 @@ function Conversion () {
   //  -----------------------------------------------------
 
   //  Fonction pour récupérer les données de l'api
+  //  Fonction pour récupérer les données de l'api
   const fetchData = useCallback(async () => {
     try {
       const rate = await fetchExchangeRate() // Récupérer le taux de change depuis l'API
-      const bitcoinRate = await fetchBitcoinRate() // Récupérer le taux de change du Bitcoin depuis l'API
-      const usdcRate = await fetchUSDCRate() // Récupérer le taux de change de l'USDC depuis l'API
+      const bitcoinRate = await fetchCryptoRate('BTC') // Récupérer le taux de change du Bitcoin depuis l'API
+      const usdcRate = await fetchCryptoRate('USDC') // Récupérer le taux de change de l'USDC depuis l'API
 
       // Mettre à jour l'état apiData avec les données récupérées
       setApiData({ exchangeRate: rate, bitcoinRate, usdcRate })

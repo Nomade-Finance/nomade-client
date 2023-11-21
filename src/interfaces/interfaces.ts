@@ -1,12 +1,11 @@
 export interface CryptoData {
-    id: string;
-    name: string;
-    current_price: number;
-    price_change: number;
+  id: string;
+  current_price: number;
+  symbol: string;
+  price: number;
 }
-
 export interface ExchangeRateData {
-    rates: {
-        XOF: number;
-    };
+  rates: {
+    XOF: number;
+  };
 }
