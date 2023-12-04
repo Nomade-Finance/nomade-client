@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center">
+  <img src="./src/assets/nomade-badge.svg" width="125" height="125" alt="badge-nomade"/>
+  <p align="center">&copy; Nomade Client</p>
+</div>
 
-## Getting Started
+## Technologies
 
-First, run the development server:
+Le projet utilise les technologies de pointe suivantes:
+
+- **React** : La bibliothèque JavaScript essentielle pour créer des interfaces utilisateur interactives.
+- **Next.js** : Un framework de développement web basé sur React offrant des fonctionnalités telles que le rendu côté serveur et la génération de sites statiques.
+- **TypeScript** : Une surcouche de JavaScript qui ajoute une sécurité de `type`, améliore la solidité et la lisibilité du code.
+
+## Contribution & Démarrage
+
+Nous encourageons vivement les contributions de la communauté. Si vous repérez des problèmes ou avez des idées pour améliorer **Nomade Finance**, n'hésitez pas à ouvrir une pull request ou à signaler un problème dans ce référentiel.
+
+---
+
+### Contribution
+
+1. `Fork` ce référentiel.
+2. Clonez votre fork sur votre machine.
+3. Créez une Branche.
+4. Créez un pull request pour proposer vos modifications.
+
+### Installation
+
+1. Installez les dépendances en exécutant `bun i` ou `npm i`.
+
+#### Exécution
+
+En utilisant `bun`
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+bun dev // mode de développement
+bun run build // build production
+bun start // démarrer le serveur de production
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+En utilisant `npm`
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm i
+npm run dev // mode de développement
+npm run build // build production
+npm start // démarrer le serveur de production
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Après avoir démarré le serveur, vous pouvez acceder au `http://localhost:3000`.
+Ceci renverra la page d'accueil de Nomade Finance.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+Nous espérons que ce guide vous a été instructif. N'hésitez pas à poser des questions au besoin.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+![Vercel](https://vercelbadge.vercel.app/api/Nomade-Finance/nomade-client)

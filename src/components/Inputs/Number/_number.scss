@@ -1,0 +1,46 @@
+.nomade-number-input {
+  outline: none;
+  font-weight: 550;
+  border: 1px solid var(--nomade-border);
+  border-radius: 5px;
+  height: 3em;
+  width: 100px;
+  padding: 0.5em;
+  font-size: 1em;
+  overflow: hidden;
+  color: var(--nomade-primary);
+  background-color: transparent;
+  text-align: center;
+  appearance: textfield;
+  -moz-appearance: textfield;
+
+  &::placeholder {
+    color: var(--nomade-border);
+  }
+}
+
+.nomade-number-input.invalid {
+  &:hover,
+  &:focus {
+    border-color: var(--nomade-accent);
+  }
+  border-color: red;
+}
+
+.nomade-number-input:hover,
+.nomade-number-input:focus {
+  border-color: var(--nomade-primary);
+}
+
+.nomade-number-input::-webkit-inner-spin-button,
+.nomade-number-input::-webkit-outer-spin-button {
+  /* Disable spinners */
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .nomade-number-input {
+    width: 100%;
+  }
+}

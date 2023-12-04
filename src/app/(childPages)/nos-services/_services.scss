@@ -1,0 +1,57 @@
+#main-services {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 3em;
+  height: 100%;
+  padding: 1em;
+  border-radius: 5px;
+  border: solid 1px var(--nomade-border);
+
+  .sevices-title {
+    font-size: 2em;
+  }
+
+  .subtitle {
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.3em;
+    text-transform: uppercase;
+    padding-bottom: 1em;
+    
+    span{
+      display: flex;
+      align-items: center;
+      font-size: 1.5em;
+      color: var(--nomade-accent);
+    }
+  }
+
+  .description {
+    font-size: 1em;
+    // color: #999;
+  }
+
+  .crypto-card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+
+    @media (max-width: 1024px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}

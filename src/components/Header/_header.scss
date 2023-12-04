@@ -1,0 +1,57 @@
+#main-header {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  height: 25px;
+  color: var(--nomade-colorc);
+  background-color: var(--nomade-blck);
+  font-weight: 100;
+  font-size: small;
+  position: sticky;
+  top: 0;
+  place-items: center;
+  place-content: center;
+  .marquee{
+    &:hover{
+      cursor: grabbing;
+    }
+    &::before{
+      content: " ";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(to right, var(--nomade-blck), var(--nomade-secondary), var(--nomade-blck));
+      z-index: -1;
+      animation: animate 10s linear infinite;
+    }
+  }
+  div{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    h2{
+      font-size: 1em;
+      font-weight: 500;
+      border-left: solid 0.5px;
+      padding-left: 0.5em;
+      padding-top: 0.4em;
+      padding-bottom: 0.4em;
+    }
+    p{
+      border-right: solid 0.5px var(--nomade-colorc) ;
+      padding-right: 0.5em;
+      padding-top: 0.4em;
+      padding-bottom: 0.4em;
+      font-weight: 500;
+    }
+    span{
+      color: var(--nomade-colorc);
+      font-weight: 100;
+    }
+  }
+}
+
+
+

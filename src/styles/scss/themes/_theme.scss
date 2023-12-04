@@ -1,0 +1,59 @@
+$colors-light: (
+  primary: #123463,
+  secondary: #099a4d,
+  background: #fffcf7,
+  hbackground: #e49435,
+  text: #123463,
+  colorc: #fffcf7,
+  accent: #e49435,
+  hover: #1234630d,
+  accent-light: #e4944d, // rgba(228, 148, 53, 0.3) converted to hex
+  primary-light: #fffcf4, // rgba(255, 252, 247, 0.3) converted to hex
+  secondary-light: #12346366, // rgba(18, 52, 99, 0.4) converted to hex
+  border: #12346325,
+  blck: #1c2826,
+  home-text: #fffcf7,
+  conversion-hover: #123463,
+  conversion-secondary: #123463,
+  conversion-error: #fffcf7,
+  conversion-hover-text: #fffcf7,
+  conversion-text: #fffcf7,
+  isSelected: #e49435,
+  summary: #12346380, // rgba(18, 52, 99, 0.5) converted to hex
+);
+
+$colors-dark: (
+  primary: #fffcf7,
+  secondary: #099a4d,
+  background: #123463,
+  home-background: #123463,
+  text: #fffcf7,
+  colorc: #fffcf7,
+  accent: #e49435,
+  hover: #fffcf70d,
+  accent-light: #e4944d, // rgba(228, 148, 53, 0.3) converted to hex
+  primary-light: #1c28264d, // rgba(28, 40, 38, 0.3) converted to hex
+  secondary-light: #ffffff4d, // rgba(255, 255, 255, 0.3) converted to hex
+  border: #fffcf725,
+  blck: #1c2826,
+  home-text: #e49435,
+  conversion-hover: #fffcf7,
+  conversion-secondary: #099a4d,
+  conversion-error: #e49435,
+  conversion-hover-text: #123463,
+  conversion-text: #fffcf7,
+  isSelected: #e49435,
+  summary: #1c282680, // rgba(28, 40, 38, 0.5) converted to hex
+);
+
+:root {
+  @each $name, $color in $colors-light {
+    --nomade-#{$name}: #{$color};
+  }
+}
+
+body.dark {
+  @each $name, $color in $colors-dark {
+    --nomade-#{$name}: #{$color};
+  }
+}

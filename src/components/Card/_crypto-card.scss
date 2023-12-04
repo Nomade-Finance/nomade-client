@@ -1,0 +1,25 @@
+.crypto-card {
+  border: solid 1px var(--nomade-border);
+  place-self: center;
+  padding: 1em;
+  gap: 1em;
+  border-radius: 5px;
+  width: 100%;
+
+  .price{
+    display: flex;
+    font-weight: 600;
+  }
+  .up {
+    color: var(--nomade-secondary);
+  }
+
+  .down {
+    color: var(--nomade-accent);
+  }
+
+  &:hover {
+    cursor: pointer ;
+    border: solid 1px var(--nomade-primary);
+  }
+}
