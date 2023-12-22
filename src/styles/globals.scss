@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @import "./base/background.scss";
 
 *,
@@ -18,7 +19,8 @@ html {
   -ms-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
+  text-rendering: optimizelegibility;
+
   ::-webkit-scrollbar,
   -moz-scrollbar,
   -ms-scrollbar {
@@ -77,6 +79,7 @@ html {
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
