@@ -54,6 +54,7 @@ export default function Navbar() {
               variant="outline"
               onClick={() => setIsOpen(!isOpen)}
               className="flex items-center w-9 p-0 md:px-2 md:py-2 rounded"
+              aria-label="Menu"
             >
               {isOpen ? <X /> : <Menu />}
             </Button>

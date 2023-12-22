@@ -5,8 +5,18 @@ import { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import Navbar from "@/components/feature/layout/navbar/navbar";
 import { ThemeProvider } from "@/src/theme/ThemeProvider";
+import { Viewport } from 'next'
 import clsx from "clsx";
 
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 7,
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#fffcf7' },
+    { media: '(prefers-color-scheme: dark)', color: '#123463' },
+  ],
+}
 const montserrat = Montserrat({
   subsets: ["latin"],
 });

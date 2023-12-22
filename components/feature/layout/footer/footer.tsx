@@ -21,10 +21,10 @@ const Footer: React.FC = () => {
         ))}
       </div>
       <div className="flex flex-row md:flex-row gap-2 md:gap-3">
-        <Link href={socialMedia.github}>
+        <Link href={socialMedia.github} aria-label={socialMedia.github}>
           <Github size={15} />
         </Link>
-        <Link href={socialMedia.linkedin}>
+        <Link href={socialMedia.linkedin} aria-label={socialMedia.linkedin}>
           <span>
             <Linkedin size={15} />
           </span>

@@ -28,6 +28,7 @@ export default function ThemeToggle() {
           size="icon"
           className="w-9 p-0 relative"
           onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
+          aria-label="Toggle theme"
         >
           <>
             {resolvedTheme === "dark" ? (
