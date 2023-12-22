@@ -1,23 +1,25 @@
 import "@/src/styles/globals.scss";
 
+import { Analytics } from "@vercel/analytics/react";
 import Footer from "@/components/feature/layout/footer/footer";
 import Header from "@/components/feature/layout/header/header";
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import Navbar from "@/components/feature/layout/navbar/navbar";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import { ThemeProvider } from "@/src/theme/ThemeProvider";
-import { Viewport } from 'next'
+import { Viewport } from "next";
 import clsx from "clsx";
 
 export const viewport: Viewport = {
-  width: 'device-width',
+  width: "device-width",
   initialScale: 1,
   maximumScale: 7,
   themeColor: [
-    { media: '(prefers-color-scheme: light)', color: '#fffcf7' },
-    { media: '(prefers-color-scheme: dark)', color: '#123463' },
+    { media: "(prefers-color-scheme: light)", color: "#fffcf7" },
+    { media: "(prefers-color-scheme: dark)", color: "#123463" },
   ],
-}
+};
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -26,15 +28,15 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   title: "Accueil | Nomade Finance",
   description: "Accédez aux cryptos en toute simplicité",
-  category: 'technology',
+  category: "technology",
   icons: {
-    icon: '/favicons/favicon-16x16.svg',
-    shortcut: '/favicons/favicon.ico',
-    
-    apple: '/favicons/apple-touch-icon.png',
+    icon: "/favicons/favicon-16x16.svg",
+    shortcut: "/favicons/favicon.ico",
+
+    apple: "/favicons/apple-touch-icon.png",
     other: {
-      rel: 'apple-touch-icon-precomposed',
-      url: '/favicons/apple-touch-icon-precomposed.png',
+      rel: "apple-touch-icon-precomposed",
+      url: "/favicons/apple-touch-icon-precomposed.png",
     },
   },
   robots: {
@@ -68,7 +70,11 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Header />
           <Navbar />
-          <main>{children}</main>
+          <main>
+            {children}
+            <Analytics />
+            <SpeedInsights/>
+          </main>
           <Footer />
         </ThemeProvider>
       </body>

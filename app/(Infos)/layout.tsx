@@ -1,9 +1,11 @@
 import "@/src/styles/globals.scss";
 
+import { Analytics } from "@vercel/analytics/react";
 import Footer from "@/components/feature/layout/footer/footer";
 import { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import Navbar from "@/components/feature/layout/navbar/navbar";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { ThemeProvider } from "@/src/theme/ThemeProvider";
 import { Viewport } from 'next'
 import clsx from "clsx";
@@ -61,7 +63,11 @@ export default function InfosLayout({
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Navbar />
-          <main className="m-3">{children}</main>
+          <main className="m-3">
+            {children}
+            <Analytics />
+            <SpeedInsights/>
+          </main>
           <Footer />
         </ThemeProvider>
       </body>
