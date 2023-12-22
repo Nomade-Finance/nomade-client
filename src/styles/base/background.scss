@@ -1,0 +1,31 @@
+.pattern {
+    background-image: url("../../assets/nomade-background.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    display: flex;
+    place-items: center;
+  }
+  
+  .mesh {
+    background-image: url("../../assets/nomade-dune-mesh.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: scroll;
+    display: flex;
+    place-items: center;
+  }
+
+  .cone {
+    background-image: url("../../assets/cone.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: scroll;
+    display: flex;
+    place-items: center;
+  }
+  
+  
