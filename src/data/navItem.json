@@ -1,0 +1,17 @@
+[
+    {
+        "icon": "home",
+        "name": "ACCUEIL",
+        "link": "/"
+    },
+    {
+        "icon": "shopping-bag",
+        "name": "SERVICES",
+        "link": "/services"
+    },
+    {
+        "icon": "tent",
+        "name": "CAMPS",
+        "link": "/camps"
+    }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "icon": "share-2",
+    "title": "Partage",
+    "content": "Échangez des informations, des astuces et des stratégies avec d'autres membres de la communauté pour vous aider à mieux comprendre les crypto-actifs."
+  },
+  {
+    "icon": "calendar-days",
+    "title": "Évents",
+    "content": "Participez à nos événements, webinaires et discussions en direct pour rester à jour des dernières tendances et développements dans le monde de la finance (décentralisée)."
+  },
+
+  {
+    "icon": "git-pull-request",
+    "title": "Contributions",
+    "content": "Vous pouvez contribuer au développement de Nomade Finance. Si vous êtes un développeur, apportez vos compétences et vos idées pour améliorer la plateforme."
+  }
+]

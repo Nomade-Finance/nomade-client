@@ -10,6 +10,7 @@ Le projet utilise les technologies de pointe suivantes:
 - **React** : La bibliothèque JavaScript essentielle pour créer des interfaces utilisateur interactives.
 - **Next.js** : Un framework de développement web basé sur React offrant des fonctionnalités telles que le rendu côté serveur et la génération de sites statiques.
 - **TypeScript** : Une surcouche de JavaScript qui ajoute une sécurité de `type`, améliore la solidité et la lisibilité du code.
+- **Tailwind CSS** : Un framework CSS utilitaire pour créer rapidement des designs personnalisés sans quitter le HTML.
 
 ## Contribution & Démarrage
 
