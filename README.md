@@ -5,11 +5,12 @@
 
 ## Technologies
 
-Notre projet utilise les technologies de pointe suivantes:
+Le projet utilise les technologies de pointe suivantes:
 
 - **React** : La bibliothèque JavaScript essentielle pour créer des interfaces utilisateur interactives.
+- **Next.js** : Un framework de développement web basé sur React offrant des fonctionnalités telles que le rendu côté serveur et la génération de sites statiques.
 - **TypeScript** : Une surcouche de JavaScript qui ajoute une sécurité de `type`, améliore la solidité et la lisibilité du code.
-- **ViteJS** : Un outil de développement ultra-rapide avec le remplacement à chaud `HMR` pour des temps de compilation réduits.
+- **Tailwind CSS** : Un framework CSS utilitaire pour créer rapidement des designs personnalisés sans quitter le HTML.
 
 ## Contribution & Démarrage
 
@@ -35,7 +36,7 @@ En utilisant `bun`
 ```bash
 bun dev // mode de développement
 bun run build // build production
-bun preview // démarrer le serveur de production
+bun start // démarrer le serveur de production
 ```
 
 En utilisant `npm`
@@ -44,10 +45,10 @@ En utilisant `npm`
 npm i
 npm run dev // mode de développement
 npm run build // build production
-npm run preview // démarrer le serveur de production
+npm start // démarrer le serveur de production
 ```
 
-Après avoir démarré le serveur, vous pouvez acceder au `http://localhost:5173`.
+Après avoir démarré le serveur, vous pouvez acceder au `http://localhost:3000`.
 Ceci renverra la page d'accueil de Nomade Finance.
 
 ---

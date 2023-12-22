@@ -1,0 +1,20 @@
+{
+  "links": [
+    {
+      "name": "Conditions d'Utilisation",
+      "url": "/cgu"
+    },
+    {
+      "name": "Politique de Confidentialité",
+      "url": "/pdc"
+    },
+    {
+      "name": "Disclaimer",
+      "url": "/disclaimer"
+    }
+  ],
+  "socialMedia": {
+    "github": "https://github.com/Nomade-Finance",
+    "linkedin": "https://www.linkedin.com/company/nomade-finance"
+  }
+}
